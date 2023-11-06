@@ -87,7 +87,7 @@ addEventListener('click', (e) => {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
 
-  let particleCount = 2500;
+  let particleCount = 2000;
   let power = 30;
 
   let angleIncrement = Math.PI * 2/ particleCount;
@@ -96,7 +96,7 @@ addEventListener('click', (e) => {
   {
     let dx = Math.cos(angleIncrement * i) * Math.random() * power;
     let dy = Math.sin(angleIncrement * i) * Math.random() * power;
-    particles.push(new Particle(mouse.x, mouse.y, 2, `hsl(${360 * Math.random()}, 50%, 50%)`, dx, dy));
+    particles.push(new Particle(mouse.x, mouse.y, 2, `hsl(${360 * Math.random()}, 80%, 50%)`, dx, dy));
   }
 
 })

@@ -504,13 +504,13 @@ animate();
 addEventListener('click', function (e) {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
-  var particleCount = 2500;
+  var particleCount = 2000;
   var power = 30;
   var angleIncrement = Math.PI * 2 / particleCount;
   for (var i = 0; i < particleCount; i++) {
     var dx = Math.cos(angleIncrement * i) * Math.random() * power;
     var dy = Math.sin(angleIncrement * i) * Math.random() * power;
-    particles.push(new Particle(mouse.x, mouse.y, 2, "hsl(".concat(360 * Math.random(), ", 50%, 50%)"), dx, dy));
+    particles.push(new Particle(mouse.x, mouse.y, 2, "hsl(".concat(360 * Math.random(), ", 80%, 50%)"), dx, dy));
   }
 });
 
