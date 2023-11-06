@@ -460,7 +460,7 @@ var Particle = /*#__PURE__*/function () {
     this.color = color;
     this.dx = dx;
     this.dy = dy;
-    this.alpha = 1;
+    this.alpha = Math.random() + 0.8;
   }
   _createClass(Particle, [{
     key: "draw",

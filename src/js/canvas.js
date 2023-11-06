@@ -35,7 +35,7 @@ class Particle {
     this.color = color
     this.dx = dx
     this.dy = dy
-    this.alpha = 1
+    this.alpha = Math.random() + 0.8;
   }
 
   draw() {
